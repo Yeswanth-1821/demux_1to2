@@ -1,0 +1,5 @@
+
+module demux_1to2(input sel, input din, output [1:0] y);
+    assign y[0] = ~sel & din;
+    assign y[1] = sel & din;
+endmodule
